@@ -1,6 +1,6 @@
 module.exports = {
   future: {},
-  purge: ['./src/**/*.{js,ts,jsx,tsx'],
+  purge: ['./src/**/*.{js,ts,jsx,tsx}'],
   theme: {
     extend: {
       colors: {
