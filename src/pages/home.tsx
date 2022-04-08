@@ -1,7 +1,7 @@
-import { useRouter } from "next/router";
-import Head from 'next/head'
+import { Router, useRouter } from "next/router";
 
-function homepage() {
+
+export default function home() {
     return (
         <div className=" bg-gray">
             <header className="header text-right border border-black bg-white">
@@ -16,12 +16,14 @@ function homepage() {
                     <div className="col-span-7">
                         <h1>履歴</h1>
                         <table className="bg-white">
-                            <tbody className="border border-black">
+                            <thead className="border border-black">
                                 <tr className="border border-black">
                                     <th>日付</th>
                                     <th>ユーザー</th>
                                     <th>内容</th>
                                 </tr>
+                            </thead>
+                            <tbody className="border border-black">
                                 <tr>
                                     <td>2020/6/18</td>
                                     <td>user1</td>
@@ -45,5 +47,3 @@ function homepage() {
         </div>
     );
 }
-  
-  export default homepage;
