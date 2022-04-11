@@ -1,18 +1,21 @@
-import { Router, useRouter } from "next/router";
-
+import Router, { useRouter } from "next/router"
 
 export default function home() {
+    const router = useRouter();
+
     return (
         <div className=" bg-gray">
             <header className="header text-right border border-black bg-white">
-                Usernameを入れる
-            </header>      
+                {router.query.input}さん
+            </header>
             <main>
+
                 <div className="grid grid-cols-9 gap-4">
                     <div className="col-span-2 border border-black text-center p-10 bg-white">
-                        <p>Home</p>
-                        <p>ユーザー管理</p>
+                        <span onClick={ () => Router.push({pathname: '/home'}) }><button>Home</button></span><br />
+                        <span onClick={ () => Router.push({pathname: '/users'}) }><button>ユーザ管理</button></span>
                     </div>
+
                     <div className="col-span-7">
                         <h1>履歴</h1>
                         <table className="bg-white">
