@@ -11,6 +11,28 @@
   justify-content: center;
   align-items: center;
 }
+.box {
+  min-height: 100vh;
+  width: 100%;
+  padding: 5%;
+  display: flex;
+  justify-content: center;
+  background-color: #f7f7f9;
+}
+.content {
+  background-color: #f7f7f9;
+  width: 100%;
+  list-style: black;
+}
+.table {
+  width: 100%;
+  background-color: #ffffff;
+  border: 1px solid;
+  text-align: left;
+}
+.form {
+  width: 100%;
+}
 
 .footer {
   display: flex;
